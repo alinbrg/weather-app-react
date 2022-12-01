@@ -14,7 +14,7 @@ export default function Main({ cityName }) {
 				return res.json();
 			})
 			.then((data) => {
-				console.log(data);
+				// console.log(data);
 				if (data.cod === "404") {
 					setErrorMessage(data.message);
 					setWeatherData(null);
