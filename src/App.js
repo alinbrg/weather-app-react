@@ -1,25 +1,17 @@
 import "./App.css";
 import Search from "./Components/Search";
 import Main from "./Components/Main";
+import { useState } from "react";
 
 function App() {
+	const [cityName, setCityName] = useState("paris");
+
+	console.log();
 	return (
-		<div
-			id="app-block"
-			className="
-			
-		"
-		>
-			{/* typeof weather.main != 'undefined' &&
-			((weatherInWord == 'Rain' ? 'rain' : '') ||
-				(weatherInWord == 'Clouds' ||
-				(weather.main.temp > 10 && weather.main.temp < 30)
-					? 'clouds'
-					: '') ||
-				(weather.main.temp > 30 ? 'warm' : '')) */}
+		<div id="app-block">
 			<main>
-				<Search />
-				<Main />
+				<Search setCityName={setCityName} />
+				<Main cityName={cityName} />
 			</main>
 		</div>
 	);

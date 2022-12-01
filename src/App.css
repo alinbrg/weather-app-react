@@ -7,17 +7,8 @@ body {
 	font-family: Courier New, Courier, monospace;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
 }
-#app-block.warm {
-	background-image: url(../img/sunny.b4586afb.jpg);
-}
-#app-block.clouds {
-	background-image: url(../img/mountains-cloud.81151242.jpg);
-}
-#app-block.rain {
-	background-image: url(../img/thunder.b1cd2cf0.jpg);
-}
 #app-block {
-	background-image: url(../img/mountains.5f5cec2f.jpg);
+	background-image: url(./assets/mountains-cloud.jpg);
 	background-size: cover;
 	background-position: bottom;
 	transition: all 0.4s;
