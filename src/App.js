@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Search from "./Components/Search";
+import Main from "./Components/Main";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div
+			id="app-block"
+			className="
+			
+		"
+		>
+			{/* typeof weather.main != 'undefined' &&
+			((weatherInWord == 'Rain' ? 'rain' : '') ||
+				(weatherInWord == 'Clouds' ||
+				(weather.main.temp > 10 && weather.main.temp < 30)
+					? 'clouds'
+					: '') ||
+				(weather.main.temp > 30 ? 'warm' : '')) */}
+			<main>
+				<Search />
+				<Main />
+			</main>
+		</div>
+	);
 }
 
 export default App;
