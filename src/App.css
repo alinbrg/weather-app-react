@@ -70,7 +70,7 @@ main {
 .weather-box .temp {
 	display: inline-block;
 	padding: 10px 25px;
-	font-size: 100px;
+	font-size: clamp(80px, 2.5vw, 100px);
 	font-weight: 900;
 	background-color: hsla(0, 0%, 100%, 0.25);
 	border-radius: 16px;
@@ -86,4 +86,10 @@ main {
 	font-size: 48px;
 	font-weight: 700;
 	font-style: italic;
+}
+
+@media (width<=1024px) {
+	#app-block {
+		max-width: unset;
+	}
 }
